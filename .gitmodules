@@ -3,13 +3,13 @@
 	url = https://github.com/jgrizou/MCAD.git
 [submodule "hardware/segment-scad"]
 	path = hardware/segment-scad
-	url = https://github.com/jgrizou/segment-scad
+	url = https://github.com/jgrizou/segment-scad.git
 [submodule "hardware/robotis-scad"]
 	path = hardware/robotis-scad
-	url = https://github.com/jgrizou/robotis-scad
+	url = https://github.com/jgrizou/robotis-scad.git
 [submodule "hardware/lego-scad"]
 	path = hardware/lego-scad
 	url = https://github.com/jgrizou/lego-scad.git
 [submodule "hardware/raspberry-scad"]
 	path = hardware/raspberry-scad
-	url = https://github.com/jgrizou/raspberry-scad
+url=https://github.com/jgrizou/raspberry-scad.git
