@@ -15,6 +15,14 @@ scadArg="\$fn=$fn"
 # create the stl folder if it does not exist
 mkdir -p stl;
 
-# should be automated for all file in the folder
-echo "Generating partName..."
-openscad -o stl/partName.stl partName.scad -D $scadArg
+# list all scad file in folder
+scadFileAvailable=$(find . -name "*.scad" -maxdepth 1)
+
+# generate all filename.scad files and output stls in ./stl/filename.stl
+for i in $scadFileAvailable; do
+  scadFilename=${i#*/}
+  filename=${scadFilename%.scad}
+  stlFilename="stl/$filename.stl"
+  echo "Generating $filename..."
+  openscad -o $stlFilename $scadFilename -D $scadArg
+done
